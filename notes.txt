@@ -1,0 +1,94 @@
+notes.txt
+
+system: windows 64 bit
+
+installs:
+git bash 
+sublime text 3
+
+
+
+
+DEFAULT EXISTING PATH:
+$ echo $PATH
+/c/Users/bayon.forte/bin:
+/mingw64/bin:
+/usr/local/bin:
+/usr/bin:
+/bin:
+/mingw64/bin:
+/usr/bin:
+/c/Users/bayon.forte/bin:
+/c/Program Files (x86)/Google/Chrome/Application:
+/c/WINDOWS/system32:
+/c/WINDOWS:
+/c/WINDOWS/System32/Wbem:
+/c/WINDOWS/System32/WindowsPowerShell/v1.0:
+/c/Users/bayon.forte/AppData/Local/Microsoft/WindowsApps:
+/usr/bin/vendor_perl:
+/usr/bin/core_perl
+
+
+IP Address: 192.168.56.101
+
+C:\Windows\System32\Drivers\etc\hosts
+
+Notepad OPEN AS ADMINISTRATOR 
+
+
+installl 
+
+npm install gulp-cli -g 
+DID NOT WORK SO WELL IN WINDOWS ....the global portion.
+had to install locally
+
+wp-config.php
+
+
+dbname
+dbuser
+123
+
+PROBLEM: ssh ing into vagrrant
+vagrant ssh
+mysql -u root -p
+123
+vagrant git bash on windows does not like the password or something else.
+
+
+/c/Users/bayon.forte/bin:
+/mingw64/bin:
+/usr/local/bin:
+/usr/bin:/bin:
+/mingw64/bin:                                                    
+/usr/bin:/c/Users/bayon.forte/bin:
+/c/WINDOWS/system32:
+/c/WINDOWS:
+/c/WINDOWS/System32/Wbem:
+/c/WINDOWS/System32/WindowsPowerShell/v1.0:
+/c/Program Files/nodejs:
+/c/HashiCorp/Vagrant/bin:
+/c/Users/bayon.forte/AppData/Local/Microsoft/WindowsApps:
+/c/Users/bayon.forte/AppData/Roaming/npm:
+/usr/bin/vendor_perl:
+/usr/bin/core_perl
+
+
+
+
+NEED to add this to the PATH on windows 
+C:\Program Files\Git\usr\bin
+
+1-4-2018
+
+yesterday: 
+I installed vagrant, virtual box, nodejs, gulp, create-react-app, as well as sublime text 3, git bash,
+and MySQlWorkbench which also required a Visual Studio dependency of some sort.
+Everything went smoothly until I tried to ssh into the vagrant box in order to manage mysql database
+for word press sites.
+At the end of the day I came across an article mentioning that using MySQlWorkbench might be an effective way 
+to manage MySQL on virtual server.
+
+today:
+This morning I went to clone my previous wp work.
+clone REACT code from learncodeacademy as well...https://github.com/learncodeacademy/react-js-tutorials.git
