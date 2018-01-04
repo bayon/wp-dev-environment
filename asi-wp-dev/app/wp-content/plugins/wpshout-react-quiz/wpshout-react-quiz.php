@@ -4,6 +4,7 @@ Plugin Name: WPShout React Quiz
 Description: React.JS Quiz in WordPress!
 Author: Press Up
 Author URI: http://pressupinc.com
+Brief: add the root element, include dependencies, include custom code, set script 'type' properly for babel.
 */
 
 add_shortcode( 'wpshout_react_quiz', 'wpshout_react_quiz_show_quiz' );
@@ -18,15 +19,17 @@ function wpshout_react_quiz_enqueue_scripts() {
 	//}
 	if(is_page('react-plugin')){
      //either in about us, or contact, or management page is in view
-	wp_enqueue_script( 'react', plugin_dir_url( __FILE__ ) . 'react/build/react.min.js' );
-	wp_enqueue_script( 'react-dom', plugin_dir_url( __FILE__ ) . 'react/build/react-dom.min.js' );
-	wp_enqueue_script( 'babel', 'https://npmcdn.com/babel-core@5.8.38/browser.min.js', '', null, false );
-	wp_enqueue_script( 'wpshout-react-quiz', plugin_dir_url( __FILE__ ) . 'wpshout-react-quiz.js' );
-	wp_enqueue_style( 'wpshout-react-quiz', plugin_dir_url( __FILE__ ) . 'wpshout-react-quiz.css' );
+			wp_enqueue_script( 'react', plugin_dir_url( __FILE__ ) . 'react/build/react.min.js' );
+			wp_enqueue_script( 'react-dom', plugin_dir_url( __FILE__ ) . 'react/build/react-dom.min.js' );
+			wp_enqueue_script( 'babel', 'https://npmcdn.com/babel-core@5.8.38/browser.min.js', '', null, false );
 
-	 
-	//}else{
-		//return;
+			wp_enqueue_script( 'wpshout-react-quiz', plugin_dir_url( __FILE__ ) . 'wpshout-react-quiz.js' );
+			wp_enqueue_style( 'wpshout-react-quiz', plugin_dir_url( __FILE__ ) . 'wpshout-react-quiz.css' );
+
+			//rest-api-component
+			//wp_enqueue_script( 'wp-rest-api-component', plugin_dir_url( __FILE__ ) . 'rest-api-component.js' );
+
+	
 	}
 
 }
