@@ -1,6 +1,25 @@
 <?php
 //require get_theme_file_path('/inc/utility-functions.php');
 
+
+//////////////de-register certain react scripts //////////////
+/*
+add_action( 'wp_print_scripts', 'my_deregister_javascript', 100 );
+function my_deregister_javascript() {
+    $screen = get_current_screen(); 
+    echo('</br>'); echo($screen->id); 
+    if($screen->id != "toplevel_page_myplugin/myplugin-admin-page "){
+      return;
+    }
+    wp_deregister_script( 'admin-react-scripts' );
+   
+}
+*/
+
+
+
+
+
 function custom_rest() {
   register_rest_field('post', 'authorName', array(
     'get_callback' => function() {return get_the_author();}
