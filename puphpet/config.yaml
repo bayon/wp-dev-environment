@@ -279,6 +279,56 @@ apache:
                     sethandler: 'proxy:fcgi://127.0.0.1:9000'
                     custom_fragment: ''
                     provider: filesmatch
+        av_123466prqxfo:
+            servername: toolbox.test
+            serveraliases:
+                - www.toolbox.test
+            docroot: /var/www/toolbox
+            port: '80'
+            setenvif:
+                - 'Authorization "(.*)" HTTP_AUTHORIZATION=$1'
+            custom_fragment: '/var/www/puphpet/customdirectives.txt'
+            ssl: '0'
+            ssl_cert: LETSENCRYPT
+            ssl_key: LETSENCRYPT
+            ssl_chain: LETSENCRYPT
+            ssl_certs_dir: LETSENCRYPT
+            ssl_protocol: ''
+            ssl_cipher: ''
+            directories:
+                avd_12349n4643db:
+                    path: /var/www/toolbox
+                    directoryindex: 'index.php app.dev'
+                    options:
+                        - Indexes
+                        - FollowSymlinks
+                        - MultiViews
+                    allow_override:
+                        - All
+                    require:
+                        - 'all granted'
+                    custom_fragment: ''
+                    provider: directory
+            files_match:
+                avfm_1234m806y8lz:
+                    path: (app_dev|config)\.php$
+                    sethandler: 'proxy:fcgi://127.0.0.1:9000'
+                    setenv:
+                        - 'APP_ENV dev'
+                    custom_fragment: ''
+                    provider: filesmatch
+                avfm_123469leirs7:
+                    path: app\.php$
+                    sethandler: 'proxy:fcgi://127.0.0.1:9000'
+                    setenv:
+                        - 'APP_ENV prod'
+                    custom_fragment: ''
+                    provider: filesmatch
+                avfm_1234ghmcw7ee:
+                    path: \.php$
+                    sethandler: 'proxy:fcgi://127.0.0.1:9000'
+                    custom_fragment: ''
+                    provider: filesmatch
 letsencrypt:
     install: '1'
     settings:

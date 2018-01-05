@@ -16,8 +16,8 @@ wp_enqueue_script( 'plugin-scripts', plugins_url('js/main.350b4a43cde67bd603fc.j
 */
 
 $STATIC_CSS = 'build/static/css/main.c17080f1.css';
-$STATIC_JS = 'build/static/js/main.62d2ff1d.js';
-
+$STATIC_JS = 'build/static/js/main.959b82df.js';
+//main.fc696a54.js
 
 function wp_react_hello_world() {
   //echo '<div id="root"></div>';
@@ -30,7 +30,7 @@ function include_react_files() {
 	wp_enqueue_style( 'prefix-style', plugins_url('build/static/css/main.c17080f1.css', __FILE__) );
 	 
 	// add the JS file to the footer - true as the last parameter
-	wp_enqueue_script( 'plugin-scripts', plugins_url('build/static/js/main.62d2ff1d.js', __FILE__),array(),  '0.0.1', true );
+	wp_enqueue_script( 'plugin-scripts', plugins_url('build/static/js/main.959b82df.js', __FILE__),array(),  '0.0.1', true );
 
 	//wp_enqueue_script( 'plugin-scripts-service-worker', plugins_url('build/static/service-worker.js', __FILE__),array(),  '', true );
 }
@@ -40,7 +40,7 @@ function include_react_files() {
 function include_admin_react_files() {
 	wp_enqueue_style( 'admin-prefix-style', plugins_url('build/static/css/main.c17080f1.css', __FILE__) );
 	 
-	wp_enqueue_script( 'admin-react-scripts', plugins_url('build/static/js/main.62d2ff1d.js', __FILE__),array(),  '0.0.1', true );
+	wp_enqueue_script( 'admin-react-scripts', plugins_url('build/static/js/main.959b82df.js', __FILE__),array(),  '0.0.1', true );
 
 }
 add_action( 'admin_enqueue_scripts', 'include_admin_react_files' );

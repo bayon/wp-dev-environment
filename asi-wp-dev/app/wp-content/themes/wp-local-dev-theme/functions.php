@@ -14,9 +14,20 @@ function my_deregister_javascript() {
     wp_deregister_script( 'admin-react-scripts' );
    
 }
+TRYING TO GET RID OF THIS ERROR:
+Minified React error #200;
 */
 
-
+function register_asi_menus() {
+  register_nav_menus(
+    array(
+      'header-menu' => __( 'Header Menu' ),
+      'extra-menu' => __( 'Extra Menu' )
+    )
+  );
+   wp_nav_menu( array( 'theme_location' => 'header-menu' ) );
+}
+add_action( 'init', 'register_asi_menus' );
 
 
 
@@ -51,7 +62,14 @@ function custom_files() {
  /*
   wp_enqueue_script('googleMap', '//maps.googleapis.com/maps/api/js?key=AIzaSyBh9b1rNCp6kOi5JeMHiRP4klDymBeoEWk', NULL, '1.0', true);
   */
+ /*
+ wp_enqueue_style('font-awesome', '//cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css');
 
+ wp_enqueue_script('smooth-scroll', '//cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js', array('jquery'), '1.0', true);
+ wp_enqueue_script('smooth-scroll-polyfill', '//cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.polyfills.min.js', array('jquery') , '1.0', true);
+ wp_enqueue_script('aos', '//cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js', array('jquery') , '1.0', true);
+ wp_enqueue_script('mouse-wheel', '//cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js', array('jquery') , '1.0', true);
+*/
   
 }
 

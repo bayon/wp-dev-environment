@@ -25,8 +25,7 @@ class App extends Component {
     let projects = this.state.projects.map((project,index) => {
         return (
             <div key={index}>
-               <p>{project.title.rendered}</p>
-               {project.content.rendered}
+              x
             </div>
           )
     })
@@ -35,6 +34,7 @@ class App extends Component {
       <div className="App">
         <p>Projects</p>
         {projects}
+        <small>You are running this application in <b>{process.env.NODE_ENV}</b> mode.</small>
         <Footer />
       </div>
     );
@@ -42,3 +42,8 @@ class App extends Component {
 }
 
 export default App;
+/*
+this was returned under the let projects = code
+ <p>{project.title.rendered}</p>
+               {project.content.rendered}
+*/

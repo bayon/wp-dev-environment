@@ -4,6 +4,8 @@
   ul {
     padding: 0;
     margin: 0;
+    list-style-type: none; 
+    list-style-image: none;
   }
 
   ul:before,
@@ -24,12 +26,15 @@
 
 .main-navigation li {
   list-style: none;
+  display: inline;
 
   @mixin atMedium {
     float: left;
     padding-left: 20px;
   }
 }
+ 
+ 
 
 .main-navigation a {
   display: block;

@@ -17,7 +17,7 @@
     
 
     <div id="my-notes-page" class="container container--narrow page-section">
-     
+      
       <span id="toggleNewForm" class="btn btn--green" >New Note</span>
        <span id="placeholderDataBtn" class="btn btn--blue" >PlaceHolder Data</span>
       
@@ -75,10 +75,11 @@
       </ul>
         
     </div>
-    
+     
   <?php }
 
  
   get_footer();
 
 ?>
+   
