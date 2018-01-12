@@ -75,6 +75,15 @@
       </ul>
         
     </div>
+     <div id="aazinga"  class="sectionTitle" data-aos="slide-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
+     <h3>Aazinga!</h3>
+    </div>
+    <script>
+    $(document).ready(function(){
+      AOS.init();
+    });
+ 
+    </script>
      
   <?php }
 
