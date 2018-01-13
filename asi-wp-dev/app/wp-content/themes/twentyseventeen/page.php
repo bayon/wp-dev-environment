@@ -17,11 +17,19 @@
 
 get_header(); ?>
 
+
+ <!-- ==========   start animation =============================   -->
 <div class="wrap">
 	<div id="primary" class="content-area">
+		<h1>PAGE</h1>
 		<main id="main" class="site-main" role="main">
 
 			<?php
+
+
+
+
+
 			while ( have_posts() ) : the_post();
 
 				get_template_part( 'template-parts/page/content', 'page' );
@@ -37,5 +45,6 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 </div><!-- .wrap -->
-
+ <!-- ==========   end animation =============================   -->
+<!-- [edsanimate_end]  -->
 <?php get_footer();

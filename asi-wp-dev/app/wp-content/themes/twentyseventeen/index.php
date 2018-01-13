@@ -30,10 +30,13 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+	 
 			<?php
+			// try and create an index
+			//$using_animation = true;
+			
 			if ( have_posts() ) :
-
+				$index = 0;
 				/* Start the Loop */
 				while ( have_posts() ) : the_post();
 
@@ -42,8 +45,19 @@ get_header(); ?>
 					 * If you want to override this in a child theme, then include a file
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
-					get_template_part( 'template-parts/post/content', get_post_format() );
-
+					 $index++;
+					 
+					 	 if(($index % 2) == 0){
+						 	get_template_part( 'template-parts/post/content' ,'anim-right');
+						 }else{
+						 	get_template_part( 'template-parts/post/content' ,'anim-left');
+						 }
+					 
+					
+	
+					
+						
+				
 				endwhile;
 
 				the_posts_pagination( array(

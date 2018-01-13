@@ -12,9 +12,9 @@
 			 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	 
-	 <div style='background-color:red;'>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
+	 <?php asi_animate_post('fadeInRightBig');   ?>
+	 <div style='background-color:#ccc;'>
 	<?php
 	//call function in functions with int id as param ...odd or even should == left or right animation.
 	
@@ -23,10 +23,11 @@
 		echo twentyseventeen_get_svg( array( 'icon' => 'thumb-tack' ) );
 	endif;
 	?>
- 
+
 	
 
-	<header class="entry-header">
+
+	<header class="entry-header"  >
 		 
 		<?php
 
@@ -61,7 +62,7 @@
 	<?php endif; ?>
  
 
-	<div class="entry-content">
+	<div class="entry-content"  >
 		<?php
 		/* translators: %s: Name of current post */
 		the_content( sprintf(
