@@ -16,7 +16,7 @@ wp_enqueue_script( 'plugin-scripts', plugins_url('js/main.350b4a43cde67bd603fc.j
 */
 
 $STATIC_CSS = 'build/static/css/main.c17080f1.css';
-$STATIC_JS = 'build/static/js/main.959b82df.js';
+$STATIC_JS = 'build/static/js/main.836c513b.js';
 //main.fc696a54.js
 
 function wp_react_hello_world() {
