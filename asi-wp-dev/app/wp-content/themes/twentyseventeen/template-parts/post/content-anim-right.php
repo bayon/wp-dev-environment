@@ -14,7 +14,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
 	 <?php asi_animate_post('fadeInRightBig');   ?>
-	 <div style='background-color:#ccc;'>
+	 <div  >
 	<?php
 	//call function in functions with int id as param ...odd or even should == left or right animation.
 	

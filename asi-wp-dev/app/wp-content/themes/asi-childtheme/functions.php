@@ -9,6 +9,11 @@ function my_theme_enqueue_styles() {
         array( $parent_style ),
         wp_get_theme()->get('Version')
     );
+    wp_enqueue_script('bayon-js', get_theme_file_uri('/js/bayon.js'), NULL, '1.1', false);
+    wp_enqueue_script('sticky-header-util-js', get_theme_file_uri('/js/sticky-header-util.js'), NULL, '1.1', true);
+ 
+    wp_enqueue_style('animate-css', '//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
+
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 

@@ -12,23 +12,81 @@
  Text Domain:  twenty-seventeen-child
  //880 x 660 px for screenshot.png
 */
+
+
+/*site overall color theme*/
+ .site,.site-content-contain,.navigation-top,.main-navigation ul{
+ 	background-color:#222 !important;
+
+ }
+ .main-navigation li{border-bottom:none;}
+
+ .navigation-top{
+ 	/*position:fixed;top:0;left:0;*/
+ }
+
+ .menu-toggle{
+ 	color:#ccc;
+ 	float:right;
+ }
+#site-navigation{
+	padding:0 !important;margin:0 !important;
+	 border:solid 1px #222;
+
+}
  
+ .site-branding{
+ 	display:none;
+ }
 .wrap{
 	max-width:none;
 	padding-right:0;
 	    padding-left:0;
 	    margin-right:0;
 	    margin-left:0;
+	    	
 
+}
+.navigation-top{
+	border:none;
+}
+ 
+.main-navigation a:link {
+    color: #aaa;
+}
+
+ 
+.main-navigation a:visited {
+    color: #aaa;
+}
+
+ 
+.main-navigation a:hover {
+    color: #eee;
+}
+
+ 
+.main-navigation a:active {
+    color: #000;
 }
 article{
 	 margin:0 !important;
 	 padding:0 !important;
-	 border:dashed #aaa 1px;
+
 	 
 }
-body .entry-header {padding:15px !important;}
-.entry-content{padding:15px;}
+body .entry-header {
+	padding:15px !important;
+	display:none;
+	/*margin:15px;*/
+}
+.entry-content{
+	/*padding:15px;
+	margin:15px;*/
+}
+
+#content .page-header{display:none;}
+
 .blog:not(.has-sidebar) #primary article, .archive:not(.page-one-column):not(.has-sidebar) #primary article, .search:not(.has-sidebar) #primary article, .error404:not(.has-sidebar) #primary .page-content, .error404.has-sidebar #primary .page-content, body.page-two-column:not(.archive) #primary .entry-content, body.page-two-column #comments {
 	    float: right;
 	    width: 100%;
@@ -41,4 +99,30 @@ body .entry-header {padding:15px !important;}
 	    width: 100%;
 	}
 }
- 
+  
+.bg-transp-blk{
+	color: #fff;  
+	padding:15px;
+	margin:0; 
+	background-color: #000; 
+	opacity: .8;
+	 
+}
+
+.one-third{width:33%;}
+.one-half{width:49%;}
+.full{width:100%;}
+ @media (min-width: 0px) and (max-width: 768px) { 
+	.one-third{width:100%;}
+	.one-half{width:100%;}
+	.full{width:100%;}
+	.bg-transp-blk{margin:0; }
+ }
+
+ /*RWD menu*/
+ @media only screen and (max-width: 767px) {
+	.navigation-top {
+		/*position: fixed;top:0;left:0;*/
+		display:none;/* hide on RWD and let RWD plugin menu work...*/
+	}
+}

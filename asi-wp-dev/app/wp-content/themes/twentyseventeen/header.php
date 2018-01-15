@@ -27,9 +27,10 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyseventeen' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-
+		
 		<?php get_template_part( 'template-parts/header/header', 'image' ); ?>
-
+		
+         
 		<?php if ( has_nav_menu( 'top' ) ) : ?>
 			<div class="navigation-top">
 				<div class="wrap">
@@ -37,9 +38,11 @@
 				</div><!-- .wrap -->
 			</div><!-- .navigation-top -->
 		<?php endif; ?>
+		
 
+	
 	</header><!-- #masthead -->
-
+<?php echo do_shortcode('[metaslider id="140"]'); ?>
 	<?php
 
 	/*
@@ -55,4 +58,4 @@
 
 	<div class="site-content-contain">
 		<div id="content" class="site-content">
-			<div style="display:inline;"><a href="#reactula">reactula yo</a><a href="#helloworld">helloworld yo</a><a href="#come-on" >come-on yo</a></div>
+			<div style="display:none;"><a href="#reactula">reactula yo</a><a href="#helloworld">helloworld yo</a><a href="#come-on" >come-on yo</a></div>

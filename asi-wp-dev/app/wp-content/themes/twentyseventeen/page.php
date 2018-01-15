@@ -29,14 +29,10 @@ get_header(); ?>
 <div class="wrap">
 
 	<div id="primary" class="content-area">
-		<h1>PAGE!!!</h1>
-		 
-
+		
 		<main id="main" class="site-main" role="main">
 
 			<?php
-
-
 
 
 
