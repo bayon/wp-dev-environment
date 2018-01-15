@@ -55,3 +55,4 @@
 
 	<div class="site-content-contain">
 		<div id="content" class="site-content">
+			<div style="display:inline;"><a href="#reactula">reactula yo</a><a href="#helloworld">helloworld yo</a><a href="#come-on" >come-on yo</a></div>

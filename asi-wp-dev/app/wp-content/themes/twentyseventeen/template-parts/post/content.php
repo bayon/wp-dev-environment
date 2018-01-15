@@ -9,17 +9,27 @@
  * @since 1.0
  * @version 1.2
  */
-
+			 
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	 
+	 <div style='background-color:red;'>
 	<?php
+	//call function in functions with int id as param ...odd or even should == left or right animation.
+	
+	
 	if ( is_sticky() && is_home() ) :
 		echo twentyseventeen_get_svg( array( 'icon' => 'thumb-tack' ) );
 	endif;
 	?>
+ 
+	
+
 	<header class="entry-header">
+		 
 		<?php
+
 		if ( 'post' === get_post_type() ) {
 			echo '<div class="entry-meta">';
 				if ( is_single() ) {
@@ -40,6 +50,7 @@
 		}
 		?>
 	</header><!-- .entry-header -->
+ 
 
 	<?php if ( '' !== get_the_post_thumbnail() && ! is_single() ) : ?>
 		<div class="post-thumbnail">
@@ -48,6 +59,7 @@
 			</a>
 		</div><!-- .post-thumbnail -->
 	<?php endif; ?>
+ 
 
 	<div class="entry-content">
 		<?php
@@ -71,5 +83,5 @@
 		twentyseventeen_entry_footer();
 	}
 	?>
-
+	</div>
 </article><!-- #post-## -->

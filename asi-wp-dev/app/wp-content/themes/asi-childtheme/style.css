@@ -1,0 +1,44 @@
+/*
+ Theme Name:   Twenty Seventeen Child
+ Theme URI:    http://example.com/twenty-seventeen-child/
+ Description:  Twenty Seventeen Child Theme
+ Author:       John Doe
+ Author URI:   http://example.com
+ Template:     twentyseventeen
+ Version:      1.0.7
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-seventeen-child
+ //880 x 660 px for screenshot.png
+*/
+ 
+.wrap{
+	max-width:none;
+	padding-right:0;
+	    padding-left:0;
+	    margin-right:0;
+	    margin-left:0;
+
+}
+article{
+	 margin:0 !important;
+	 padding:0 !important;
+	 border:dashed #aaa 1px;
+	 
+}
+body .entry-header {padding:15px !important;}
+.entry-content{padding:15px;}
+.blog:not(.has-sidebar) #primary article, .archive:not(.page-one-column):not(.has-sidebar) #primary article, .search:not(.has-sidebar) #primary article, .error404:not(.has-sidebar) #primary .page-content, .error404.has-sidebar #primary .page-content, body.page-two-column:not(.archive) #primary .entry-content, body.page-two-column #comments {
+	    float: right;
+	    width: 100%;
+		 
+	    
+	}
+@media screen and (min-width: 48em){
+	.blog:not(.has-sidebar) #primary article, .archive:not(.page-one-column):not(.has-sidebar) #primary article, .search:not(.has-sidebar) #primary article, .error404:not(.has-sidebar) #primary .page-content, .error404.has-sidebar #primary .page-content, body.page-two-column:not(.archive) #primary .entry-content, body.page-two-column #comments {
+	    float: right;
+	    width: 100%;
+	}
+}
+ 
