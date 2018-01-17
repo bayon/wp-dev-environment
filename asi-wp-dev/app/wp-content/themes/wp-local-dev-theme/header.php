@@ -63,7 +63,7 @@ if($current_user->user_level >= 2){
       <a href="<?php echo esc_url(site_url('/search')); ?>" class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></a>
       <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
       <div class="site-header__menu group">
-        <nav class="main-navigation">
+        <nav class="main-navigation" >
           <ul>
             
             <li <?php if (is_page('react-plugin') or wp_get_post_parent_id(0) == 16) echo 'class="current-menu-item"' ?>>
