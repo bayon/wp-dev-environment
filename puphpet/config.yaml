@@ -330,10 +330,10 @@ apache:
                     custom_fragment: ''
                     provider: filesmatch
         av_123566prqxfo:
-            servername: sandbox.test
+            servername: reactit.test
             serveraliases:
-                - www.sandbox.test
-            docroot: /var/www/sandbox/app
+                - www.reactit.test
+            docroot: /var/www/reactit/app
             port: '80'
             setenvif:
                 - 'Authorization "(.*)" HTTP_AUTHORIZATION=$1'
@@ -347,7 +347,7 @@ apache:
             ssl_cipher: ''
             directories:
                 avd_12359n4643db:
-                    path: /var/www/toolbox
+                    path: /var/www/reactit
                     directoryindex: 'index.php app.dev'
                     options:
                         - Indexes
